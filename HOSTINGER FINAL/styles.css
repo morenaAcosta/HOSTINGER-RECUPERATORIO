@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap');
+
+/* ====== 0 ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM sans', sans-serif;
+    color: #1d1e20;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Botón hamburguesa oculto en desktop */
+.menu-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Navbar contenedor */
+.contenedor-navbar {
+  max-width: 1312px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+}
+
+.logo img {
+  padding-right: 35px;
+padding-top: 7px;
+cursor: pointer;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    padding-right: 278px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #1d1e20;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: rgb(88, 88, 88);
+}
+
+.horizons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nuevo {
+    background-color: #e0f5ed;
+    color: #2c9469;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.idioma {
+      font-family: DM sans;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 14px;
+}
+
+.idioma img {
+    width: 30px;
+}
+
+.btn-ingresar {
+    font-family: DM sans;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 16px;
+    border: 1px solid #000000;
+    color: #000000;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-ingresar:hover {
+
+    color: rgb(163, 163, 163);
+}
+
+
+
+/* ====== HERO ====== */
+.hero {
+  background-color: #ffffff;
+  padding-top: 135px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+
+  display: flex;
+  justify-content: center; /* centra el contenido */
+}
+
+.hero-contenedor {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-texto {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.subtitulo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.oferta {
+  color: #6927e6;
+  font-weight: 600;
+}
+
+.beneficios {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.beneficios li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.beneficios-i1 {
+  color: #10b981;
+  margin-right: 8px;
+}
+
+.beneficios-i2 {
+  color: #393a3c;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.precio {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+
+}
+
+.moneda {
+  font-size: 16px;
+}
+
+.valor {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2e1065;
+}
+
+.mes {
+  font-size: 18px;
+}
+
+.bono {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.btn-principal {
+  background: #673de6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 36px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-principal:hover {
+  opacity: 0.9;
+}
+
+.contador {
+  background-color: #ede9fe;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #2e1065;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.garantia {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+
+.img-hero {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  flex: 1;
+  object-fit: contain;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* ====== SECCIÓN MIGRACIÓN ====== */
+.seccion-migracion {
+  background-color: #1f1346;
+  padding: 90px 40px; 
+  color: #eee;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seccion-migracion h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  line-height: 1.5;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.cartas {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.carta {
+  background-color: #2f1c6a;
+  padding: 28px;
+  border-radius: 16px;
+  flex: 1 1 30%;
+  min-width: 280px;
+  max-width: 350px;
+  text-align: left;
+}
+
+.icono {
+  background-color: #673de6;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.carta h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.carta p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.boton-contenedor {
+  margin-top: 40px;
+}
+
+.btn-empezar {
+  background-color: #673de6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-empezar:hover {
+  opacity: 0.9;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #F4F5FF;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-size: 14px;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo-footer {
+  width: 150px;
+}
+
+.medios-pago {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.medios-pago img {
+  height: 40px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px #ccc;
+}
+
+.y-mas {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.footer-redes {
+  padding-top: 30px;
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #1d1e20;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+/* ====== RESPONSIVE ====== */
+
+/* Responsive <1140px */
+
+@media screen and (max-width: 1140px) {
+  .acciones {
+    display: none; 
+  }
+
+  .menu {
+    display: none; 
+  }
+
+  .menu-hamburguesa {
+    display: flex; 
+    align-items: center;
+  }
+}
+
+/* ====== RESPONSIVE HERO ====== */
+@media screen and (max-width: 1140px) {
+  .row {
+    flex-direction: column; 
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-texto {
+    max-width: 100%;
+    text-align: start;
+  }
+
+  .botones {
+    justify-content: center;
+  }
+
+  .img-hero {
+    max-width: 100%; 
+  }
+}
+/* ====== RESPONSIVE MIGRACIÓN ====== */
+@media screen and (max-width: 1025px) {
+  .cartas {
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+  }
+
+  .carta {
+    max-width: 688px; 
+
+  }
+
+  .descripcion {
+    padding: 0 80px; 
+  }
+}
+
+/* ====== FOOTER RESPONSIVE IGUAL HOSTINGER ====== */
+@media screen and (max-width: 1140px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-left {
+    gap: 16px;
+  }
+
+  .footer-right {
+    gap: 16px;
+  }
+
+  .footer-redes {
+    order: -50; 
+    padding-top: 0;
+    gap: 24px;
+    font-size: 28px;
+  }
+
+  .footer-links {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .medios-pago {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .medios-pago img {
+    height: 36px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 16px;
+  }
+}
+
