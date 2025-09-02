@@ -30,7 +30,7 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Botón hamburguesa oculto en desktop */
+/* Botón hamburguesa oculto */
 .menu-hamburguesa {
   display: none;
   background: none;
@@ -140,7 +140,7 @@ cursor: pointer;
   padding-bottom: 50px;
 
   display: flex;
-  justify-content: center; /* centra el contenido */
+  justify-content: center; 
 }
 
 .hero-contenedor {
@@ -501,7 +501,7 @@ cursor: pointer;
   }
 }
 
-/* ====== FOOTER RESPONSIVE IGUAL HOSTINGER ====== */
+/* ====== FOOTER RESPONSIVE ====== */
 @media screen and (max-width: 1140px) {
   .footer {
     padding: 40px 20px;
